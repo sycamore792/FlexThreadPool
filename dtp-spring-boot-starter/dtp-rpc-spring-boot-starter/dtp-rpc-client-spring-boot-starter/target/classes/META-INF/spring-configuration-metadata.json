@@ -1,0 +1,29 @@
+{
+  "groups": [],
+  "properties": [
+    {
+      "name": "spring.dtp.enabled",
+      "type": "java.lang.String",
+      "description": "dynamic thread-pool enabled.",
+      "defaultValue": "false"
+    },
+    {
+      "name": "spring.dtp.item-id",
+      "type": "java.lang.String",
+      "description": "dynamic thread-pool item-id."
+    },
+    {
+      "name": "spring.dtp.namespace",
+      "type": "java.lang.String",
+      "description": "dynamic thread-pool namespace.",
+      "defaultValue": "public"
+    },
+    {
+      "name": "spring.dtp.server-addr",
+      "type": "java.lang.String",
+      "description": "dynamic thread-pool server address.",
+      "defaultValue": "localhost:6691"
+    }
+  ],
+  "hints": []
+}

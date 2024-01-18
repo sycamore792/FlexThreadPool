@@ -1,0 +1,27 @@
+{
+  "properties": [
+    {
+      "name": "spring.dtp.server-addr",
+      "type": "java.lang.String",
+      "defaultValue": "localhost:6691",
+      "description": "dynamic thread-pool server address."
+    },
+    {
+      "name": "spring.dtp.enabled",
+      "type": "java.lang.String",
+      "defaultValue": "false",
+      "description": "dynamic thread-pool enabled."
+    },
+    {
+      "name": "spring.dtp.namespace",
+      "type": "java.lang.String",
+      "defaultValue": "public",
+      "description": "dynamic thread-pool namespace."
+    },
+    {
+      "name": "spring.dtp.item-id",
+      "type": "java.lang.String",
+      "description": "dynamic thread-pool item-id."
+    }
+  ]
+}
