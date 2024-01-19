@@ -46,7 +46,6 @@ public class RpcServerLoader {
     }
 
     public void load(String serverAddress) {
-
         String[] ipAddr = serverAddress.split(RpcServerLoader.DELIMITER);
         if (ipAddr.length == 2) {
             this.serverAddress = serverAddress;

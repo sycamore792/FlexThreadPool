@@ -4,9 +4,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * THIS IS A CLASS
- *
- * @PROJECT_NAME: dtp
  * @CLASS_NAME: ServerApplication
  * @DESCRIPTION:
  * @CREATER: 桑运昌

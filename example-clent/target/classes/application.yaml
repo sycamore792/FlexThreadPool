@@ -1,8 +1,9 @@
 server:
   port:  8081
-rpc:
-  client:
-    scanPackage: "org.sycamore.dtp.client"
-  remote:
-    ip:  localhost
-    port:  8002
+dtp:
+  rpc:
+    client:
+      scanPackage: "org.sycamore.dtp.client"
+    remote:
+      ip: localhost
+      port: 8002

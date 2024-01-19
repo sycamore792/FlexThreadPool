@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-inter">
+<!-- Container -->
+<div class="flex h-screen overflow-hidden">
+    <!-- Sidebar -->
+    <div class="sidebar w-64 bg-white shadow">
+        <div class="p-6">
+            <a href="#" class="flex items-center space-x-2">
+                <i class="fas fa-briefcase text-2xl text-indigo-600"></i>
+                <span class="text-2xl font-semibold">ByeWind</span>
+            </a>
+            <nav class="mt-6">
+                <div class="mt-4">
+                    <!-- Favorites -->
+                    <p class="text-xs font-semibold text-gray-600 uppercase tracking-wide">Favorites</p>
+                    <a href="#" class="mt-2 flex items-center py-2 px-4 text-sm font-medium text-gray-700 rounded hover:bg-gray-200">
+                        <i class="fas fa-circle-notch fa-fw"></i>
+                        <span class="ml-3">Overview</span>
+                    </a>
+                    <a href="#" class="mt-2 flex items-center py-2 px-4 text-sm font-medium text-gray-700 rounded hover:bg-gray-200">
+                        <i class="fas fa-clipboard-list fa-fw"></i>
+                        <span class="ml-3">Projects</span>
+                    </a>
+                </div>
+                <div class="mt-4">
+                    <!-- Dashboards -->
+                    <p class="text-xs font-semibold text-gray-600 uppercase tracking-wide">Dashboards</p>
+                    <a href="#" class="mt-2 flex items-center py-2 px-4 text-sm font-medium text-gray-700 bg-gray-200 rounded">
+                        <i class="fas fa-home fa-fw"></i>
+                        <span class="ml-3">Overview</span>
+                    </a>
+                    <a href="#" class="mt-2 flex items-center py-2 px-4 text-sm font-medium text-gray-700 rounded hover:bg-gray-200">
+                        <i class="fas fa-shopping-cart fa-fw"></i>
+                        <span class="ml-3">eCommerce</span>
+                    </a>
+                    <!-- Add other sections as needed -->
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Content area -->
+    <div class="flex-1 flex flex-col overflow-auto">
+        <!-- Top bar -->
+        <div class="flex justify-between items-center p-5 bg-white shadow-sm">
+            <h1 class="text-xl font-semibold text-gray-700">Overview</h1>
+            <div class="flex items-center">
+                <!-- Top bar right items -->
+                <!-- Search input -->
+                <div class="relative mr-3">
+            <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+              <i class="fas fa-search text-gray-500"></i>
+            </span>
+                    <input type="search" class="py-2 pl-10 pr-4 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-indigo-500" placeholder="Search">
+                </div>
+                <!-- Profile and settings -->
+                <a href="#" class="text-gray-500 hover:text-gray-700 p-2">
+                    <i class="fas fa-bell"></i>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-700 p-2">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Main content -->
+        <div class="flex-1 p-5">
+            <!-- Replace with your content -->
+        </div>
+    </div>
+</div>
+</body>
+</html>

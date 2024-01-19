@@ -9,9 +9,6 @@ import org.sycamore.dtp.rpc.client.RpcServerLoader;
 import org.sycamore.dtp.starter.rpc.client.RpcFactoryBean;
 
 /**
- * THIS IS A CLASS
- *
- * @PROJECT_NAME: dtp
  * @CLASS_NAME: NettyRpcClientConfiguration
  * @DESCRIPTION:
  * @CREATER: 桑运昌
@@ -19,9 +16,9 @@ import org.sycamore.dtp.starter.rpc.client.RpcFactoryBean;
  */
 @Configuration
 public class NettyRpcClientConfiguration {
-    @Value("${rpc.remote.ip}")
+    @Value("${dtp.rpc.remote.ip}")
     private String remoteIp;
-    @Value("${rpc.remote.port}")
+    @Value("${dtp.rpc.remote.port}")
     private int port;
 
 
