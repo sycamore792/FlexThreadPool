@@ -4,10 +4,13 @@ import lombok.RequiredArgsConstructor;
 
 import org.springframework.web.bind.annotation.*;
 import org.sycamore.dtp.common.ThreadPoolChangeableParams;
+import org.sycamore.dtp.common.entity.ThreadPoolBaseParams;
 import org.sycamore.dtp.common.web.base.Result;
 import org.sycamore.dtp.common.web.base.Results;
 import org.sycamore.dtp.common.web.exception.ServiceException;
 import org.sycamore.dtp.common.remote.RpcService;
+
+import java.util.List;
 
 /**
  * @CLASS_NAME: ClientController
@@ -34,7 +37,8 @@ public class ClientController {
 
     @GetMapping("pool-list/{pageName}/{pageSize}")
     public Result getPoolList(@PathVariable("pageName") String pageName, @PathVariable("pageSize") Integer pageSize) {
-        return null;
+        List<ThreadPoolBaseParams> threadPoolInfoList = rpcService.getThreadPoolInfoList();
+        return Results.success(threadPoolInfoList);
     }
 
     @PostMapping("/update-pool-params/{id}")

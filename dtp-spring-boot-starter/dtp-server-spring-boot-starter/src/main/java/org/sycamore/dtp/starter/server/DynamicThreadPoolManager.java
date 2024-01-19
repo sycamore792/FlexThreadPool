@@ -20,7 +20,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  */
 @Slf4j
 public class DynamicThreadPoolManager implements ApplicationContextAware {
-    private ConcurrentHashMap<String, DynamicThreadPool> dynamicThreadPoolMap = new ConcurrentHashMap<>();
+    private static ConcurrentHashMap<String, DynamicThreadPool> dynamicThreadPoolMap = new ConcurrentHashMap<>();
     private ApplicationContext applicationContext;
     private static final AtomicBoolean INIT_FLAG = new AtomicBoolean(false);
     @PostConstruct
@@ -44,5 +44,13 @@ public class DynamicThreadPoolManager implements ApplicationContextAware {
 
     public static boolean isInit() {
         return INIT_FLAG.get();
+    }
+
+    public static  DynamicThreadPool getDynamicThreadPoolById(String id) {
+        return  dynamicThreadPoolMap.get(id);
+    }
+
+    public static Map<String, DynamicThreadPool> getDynamicThreadPoolMap() {
+        return dynamicThreadPoolMap;
     }
 }

@@ -11,7 +11,7 @@ import org.sycamore.dtp.starter.server.RpcServiceImpl;
 
 
 /**
- * @CLASS_NAME: RpcConfig
+ * @CLASS_NAME: ServerConfig
  * @DESCRIPTION:
  * @CREATER: 桑运昌
  * @DATE: 2024/1/17 16:04

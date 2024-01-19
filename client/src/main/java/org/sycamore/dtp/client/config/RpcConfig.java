@@ -7,9 +7,6 @@ import org.sycamore.dtp.rpc.client.RpcProxy;
 import org.sycamore.dtp.starter.rpc.client.RpcFactoryBean;
 
 /**
- * THIS IS A CLASS
- *
- * @PROJECT_NAME: dtp
  * @CLASS_NAME: RpcConfig
  * @DESCRIPTION:
  * @CREATER: 桑运昌
@@ -20,7 +17,7 @@ public class RpcConfig {
 
 
     @Bean
-    public RpcFactoryBean<RpcService> myRemoteServiceRpcFactoryBean(RpcProxy rpcProxy) {
+    public RpcFactoryBean<RpcService> remoteServiceRpcFactoryBean(RpcProxy rpcProxy) {
         return new RpcFactoryBean<RpcService>(RpcService.class, rpcProxy);
     }
 }

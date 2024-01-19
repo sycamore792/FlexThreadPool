@@ -1,6 +1,11 @@
 package org.sycamore.dtp.common.remote;
 
 
+import org.sycamore.dtp.common.ThreadPoolParams;
+import org.sycamore.dtp.common.entity.ThreadPoolBaseParams;
+
+import java.util.List;
+
 /**
  * @INTERFACE_NAME: RpcService
  * @DESCRIPTION:
@@ -15,4 +20,10 @@ public interface RpcService {
      * @return
      */
     Boolean healthCheck();
+
+    /**
+     * 获取服务端动态线程池列表信息
+     */
+    List<ThreadPoolBaseParams> getThreadPoolInfoList();
+
 }
